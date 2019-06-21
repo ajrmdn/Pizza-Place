@@ -29,7 +29,7 @@ function Pizza(toppings, size){
 var pizzaPlace = new PizzaPlace();
 
 function displayPizza(pizzaPlaceToDisplay) {
-  var pizzaPrice = $(#)
+  var pizzaPrice = $()
 }
 
 $(document).ready(function() {
