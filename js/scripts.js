@@ -26,6 +26,12 @@ function Pizza(toppings, size){
 
 // User Interface Logic for Pizza Place //
 
+var pizzaPlace = new PizzaPlace();
+
+function displayPizza(pizzaPlaceToDisplay) {
+  var pizzaPrice = $(#)
+}
+
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
