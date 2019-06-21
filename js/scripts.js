@@ -3,7 +3,7 @@
 //--- This is a CONSTRUCTOR ---//
 function PizzaPlace() {
   this.toppings = [],
-  this.sizes = []
+  this.size = [],
 }
 
 //--- This is a PROTOTYPE ---//
@@ -12,22 +12,13 @@ PizzaPlace.prototype.addTopping = function(topping) {
 }
 
 PizzaPlace.prototype.addSize = function(size) {
-  this.sizes.push(size);
+  this.size.push(size);
 }
 
-// Business Logic for Toppings //
+// Business Logic for Toppings and Sizes //
 
 //--- This is an OBJECT ---//
-function Toppings(firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping){
-  this.firstTopping = firstTopping,
-  this.secondTopping = secondTopping,
-  this.thirdTopping = thirdTopping,
-  this.fourthTopping = fourthTopping,
-  this.fifthTopping = fifthTopping,
-}
-
-function Sizes(small, medium, large) {
-  this.small= small,
-  this.medium = medium,
-  this.large = large,
+function Pizza(toppings, size){
+  this.toppings = toppings
+  this.size = size
 }
