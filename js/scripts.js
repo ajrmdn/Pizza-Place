@@ -2,8 +2,8 @@
 
 //--- This is a CONSTRUCTOR ---//
 function PizzaPlace() {
-  this.toppings = [],
-  this.size = [],
+  this.toppings = []
+  this.size = []
 }
 
 //--- These are PROTOTYPES ---//
@@ -33,7 +33,6 @@ function displayPizza(pizzaPlaceToDisplay) {
 };
 
 
-
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
     event.preventDefault();
@@ -49,4 +48,4 @@ $(document).ready(function() {
 
     var pizzaToppings = { name: "Pizza Toppings", toppings: [artichoke, olives, jalepeno, tomato, cheese]};
 
-    var pizzaSize = { name: "Pizza Size", size: [small, medium, large]};
+    var pizzaSize = { name: "Pizza Size", size: [small, medium, large] };
