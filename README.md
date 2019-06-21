@@ -24,7 +24,7 @@ _A program that assists in helping the user order a pizza_
 
 _Message me via github with any issues_
 
-https://github.com/ajrmdn/codereviewWK4/tree/master
+https://github.com/ajrmdn/codereviewWK4
 
 ## Technologies Used
 
