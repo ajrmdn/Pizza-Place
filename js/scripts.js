@@ -51,5 +51,5 @@ $(document).ready(function() {
     var pizzaSize = { name: "Pizza Size", size: [small, medium, large] };
 
     $('#pizza').submit(function() {
-      $("#output").show();
+      $(".output").show();
     });
