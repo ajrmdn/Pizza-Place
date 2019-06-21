@@ -1,0 +1,130 @@
+
+
+
+
+
+
+
+
+
+pizza {
+  background: tomato;
+  display: block;
+  width: 42cm;
+  height: 42cm;
+  border-radius: 100%;
+  border: 2cm solid wheat;
+  position: relative;
+}
+salami {
+  background: IndianRed;
+  width: 10cm;
+  height: 10cm;
+  border-radius: 100%;
+}
+olive {
+  background: Olive;
+  width: 4cm;
+  height: 5cm;
+  border-radius: 100%;
+}
+corn {
+  background: #ffda46;
+  width: 2cm;
+  height: 3cm;
+  border-radius: .8cm;
+}
+salami, corn, olive, {
+  display: block;
+  position: absolute;
+}
+salami:nth-child(1){
+  top: 28cm;
+  left: 12cm
+}
+salami:nth-child(2){
+  top: 22cm;
+  left: 27cm
+}
+salami:nth-child(3){
+  top: 6cm;
+  left: 22cm
+}
+salami:nth-child(4){
+  top: 12cm;
+  left: 3cm
+}
+olive:nth-child(5){
+  left: 15cm;
+  top: 10cm;
+  transform: rotate(30deg);
+}
+olive:nth-child(6){
+  left: 24cm;
+  top: 23cm;
+  transform: rotate(-50deg);
+}
+olive:nth-child(7){
+  left: 14cm;
+  top: 26cm;
+  transform: rotate(-140deg);
+}
+olive:nth-child(8){
+  left: 24cm;
+  top: 34cm;
+  transform: rotate(20deg);
+}
+corn:nth-child(9){
+  left: 23cm;
+  top: 10cm;
+  transform: rotate(-20deg);
+}
+corn:nth-child(10){
+  left: 19cm;
+  top: 30cm;
+  transform: rotate(-100deg);
+}
+corn:nth-child(11){
+  left: 33cm;
+  top: 20cm;
+  transform: rotate(100deg);
+}
+corn:nth-child(12){
+  left: 37cm;
+  top: 14cm;
+  transform: rotate(30deg);
+}
+corn:nth-child(13){
+  left: 30cm;
+  top: 32cm;
+  transform: rotate(40deg);
+}
+corn:nth-child(14){
+  left: 10cm;
+  top: 17cm;
+  transform: rotate(40deg);
+}
+salami:nth-child(15){
+  left: 14cm;
+  top: 16cm
+}
+olive:nth-child(16){
+  left: 10cm;
+  top: 4cm;
+  transform: rotate(-10deg)
+}
+corn:nth-child(17){
+  left: 19cm;
+  top: 2cm;
+  transform: rotate(80deg)
+}
+corn:nth-child(18){
+  left: 19cm;
+  top: 20cm;
+  transform: rotate(-60deg)
+}
+corn:nth-child(19){
+  left: 6cm;
+  top: 27cm;
+  transform: rotate(-10deg)
+}

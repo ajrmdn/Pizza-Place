@@ -28,7 +28,7 @@ function Pizza(toppings, size){
 
 var pizzaPlace = new PizzaPlace();
 
-function displayPizza(pizzaPlaceToDisplay) {
+function displayPrice(pizzaPlaceToDisplay) {
   var pizzaPrice = $("form#pizza");
 };
 
@@ -49,3 +49,7 @@ $(document).ready(function() {
     var pizzaToppings = { name: "Pizza Toppings", toppings: [artichoke, olives, jalepeno, tomato, cheese]};
 
     var pizzaSize = { name: "Pizza Size", size: [small, medium, large] };
+
+    $('#pizza').submit(function() {
+      $("#output").show();
+    });
