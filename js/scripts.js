@@ -1,19 +1,19 @@
 // Business Logic for PizzaPlace //
 
+// //--- This is a CONSTRUCTOR ---//
+// function PizzaOrder() {
+//   this.pizza = []
+// }
 //--- This is a CONSTRUCTOR ---//
-function PizzaOrder() {
-  this.pizza = []
-}
-//--- This is an OBJECT ---//
 function Pizza(size,topping) {
   this.size = size;
   this.topping = topping;
 }
 
 //--- These are PROTOTYPES ---//
-PizzaOrder.prototype.addPizza = function(Pizza) {
-  this.pizza.push(Pizza);
-}
+// PizzaOrder.prototype.addPizza = function(Pizza) {
+//   this.pizza.push(Pizza);
+// }
 
 Pizza.prototype.pizzaPrice = function() {
   if (this.size === "Small") {
@@ -29,11 +29,12 @@ Pizza.prototype.pizzaPrice = function() {
 
 var pizzaOrder = new PizzaOrder();
 $(document).ready(function() {
-  $("#pizzaPie").submit(function(event) {
+  $("#pizza").submit(function(event) {
     event.preventDefault();
 
     //--- These are PROPERTIES ---//
-    var sizeInput = $('#pizzaPie').val();
+    var sizeInput = $('#pieSize').val();
+    // toppings picked should contain an array of all the toppings that the user picked 
     var toppingsPicked = []
     var toppingInput =
       $('input:checkbox[name = numberOfToppings]:checked').each(function() {
