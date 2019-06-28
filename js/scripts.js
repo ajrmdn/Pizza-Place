@@ -27,7 +27,7 @@ $(document).ready(function() {
     event.preventDefault();
 //--- These are USER INPUT ---//
     const sizeInput = parseInt($('#pieSize').val());
-    var artichoke   = $('#artichokes').is(':checked') ? 1 : 0;
+    const artichoke   = $('#artichokes').is(':checked') ? 1 : 0;
     const olive     = $('#olives').is(':checked') ? 1 : 0;
     const jalapeno  = $('#jalapenos').is(':checked') ? 1 : 0;
     const tomato    = $('#tomatoes').is(':checked') ? 1 : 0;
