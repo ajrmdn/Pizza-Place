@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Pizza Place</title>
@@ -19,24 +19,25 @@
         <label for="pieSize">Pizza Size</label>
         <select id="pieSize" name="pieSize">
          <option value="1"></option>
-         <option value="Small">$10.00 for a Small</option>
-         <option value="Medium">$15.00 for a Medium</option>
-         <option value="Large">$20.00 for a Large</option>
+         <option value="10">$10.00 for a Small</option>
+         <option value="15">$15.00 for a Medium</option>
+         <option value="20">$20.00 for a Large</option>
         </select>
       </div>
       <div class="form-group">
         <h3>Pick your toppings!</h3>
-        <input type="checkbox" name="pizza-toppings" value="artichoke"> Artichokes<br>
-        <input type="checkbox" name="pizza-toppings" value="olives"> Olives<br>
-        <input type="checkbox" name="pizza-toppings" value="jalepenos"> Jalepenos<br>
-        <input type="checkbox" name="pizza-toppings" value="tomatoes"> Tomatoes<br>
-        <input type="checkbox" name="pizza-toppings" value="Cheese"> Cheese<br>
+        <input type="hidden" name="artichokes" value="0"/>
+        <input type="checkbox" name="artichokes" value="1"> Artichokes<br>
+        <input type="checkbox" name="olives" value="1"> Olives<br>
+        <input type="checkbox" name="jalapenos" value="1"> Jalepenos<br>
+        <input type="checkbox" name="tomatoes" value="1"> Tomatoes<br>
+        <input type="checkbox" name="cheese" value="1"> Cheese<br>
       </div>
       <button type="submit" name="button">Make My Pizza!</button>
      </form>
      <div class="output"></div>
-      <h4>Your Total Is: <id='payment'></h4>
-      <p><span id= 'pizzaMade'></span></p>
+      <h4>Your Total Is: <span id='payment'></span></h4>
+      <p><span id='pizzaMade'></span></p>
     </div>
     <pizza>
       <salami></salami>
