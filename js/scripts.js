@@ -6,11 +6,12 @@ const pizzaOrder = new Pizza();
 function Pizza(size, topping1, topping2, topping3, topping4, topping5) {
 //--- These are PROPERTIES ---//
   this.size = size,
-  this.topping1 = topping1,
-  this.topping2 = topping2,
-  this.topping3 = topping3,
-  this.topping4 = topping4,
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
+  this.topping4 = topping4;
   this.topping5 = topping5
+
 }
 
 //--- This is PROTOTYPE (algorithm C = B + A)--- pizzaPrice = method
@@ -22,21 +23,22 @@ Pizza.prototype.pizzaPrice = function(size, topping1, topping2, topping3, toppin
 // User Interface Logic for Pizza Place //
 
 $(document).ready(function() {
-  $("#pizza").submit(function(event) {
+  $(".pizza").submit(function(event) {
     event.preventDefault();
 //--- These are USER INPUT ---//
     const sizeInput = parseInt($('#pieSize').val());
-    const artichoke = parseInt($('input:checkbox[name=artichokes]:checked').val());
-    const olive = parseInt($('input:checkbox[name=olives]:checked').val());
-    const jalapeno = parseInt($('input:checkbox[name=jalapenos]:checked').val());
-    const tomato = parseInt($('input:checkbox[name=tomatoes]:checked').val());
-    const cheese = parseInt($('input:checkbox[name=cheese]:checked').val());
-    console.log(sizeInput);
-    console.log(artichoke);
-    console.log(olive);
-    console.log(jalapeno);
-    console.log(tomato);
-    console.log(cheese);
+    var artichoke   = $('#artichokes').is(':checked') ? 1 : 0;
+    const olive     = $('#olives').is(':checked') ? 1 : 0;
+    const jalapeno  = $('#jalapenos').is(':checked') ? 1 : 0;
+    const tomato    = $('#tomatoes').is(':checked') ? 1 : 0;
+    const cheese    = $('#cheese').is(':checked') ? 1 : 0;
+
+    console.log('artichoke=' + artichoke);
+    console.log('olive=' + olive);
+    console.log('jalapeno=' + jalapeno);
+    console.log('tomato=' + tomato);
+    console.log('cheese=' + cheese);
+
 //--- Calls on the METHOD ---//
     const total = pizzaOrder.pizzaPrice(sizeInput, artichoke, olive, jalapeno, tomato, cheese);
 
