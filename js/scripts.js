@@ -16,7 +16,7 @@ function Pizza(size, topping1, topping2, topping3, topping4, topping5) {
 Pizza.prototype.pizzaPrice = function(size, topping1, topping2, topping3, topping4, topping5) {
   const totalPrice = size + topping1 + topping2 + topping3 + topping4 + topping5;
   this.price = totalPrice;
-  console.log(this.price);
+
 
 }
 
@@ -34,14 +34,9 @@ $(document).ready(function() {
     const cheese    = $('#cheese').is(':checked') ? 1 : 0;
     const pizzaOrder = new Pizza(sizeInput, artichoke, olive, jalepeno, tomato, cheese);
 
-    // console.log('artichoke=' + artichoke);
-    // console.log('olive=' + olive);
-    // console.log('jalepeno=' + jalepeno);
-    // console.log('tomato=' + tomato);
-    // console.log('cheese=' + cheese);
 
 //--- Calls on the METHOD ---//
-    const total = pizzaOrder.pizzaPrice(sizeInput, artichoke, olive, jalepeno, tomato, cheese);
+    pizzaOrder.pizzaPrice(sizeInput, artichoke, olive, jalepeno, tomato, cheese);
 
     $('.output').show();
     $('#payment').text('$ ' + pizzaOrder.price + '.00');
